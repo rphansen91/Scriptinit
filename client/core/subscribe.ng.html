@@ -1,0 +1,16 @@
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+  <form ng-submit="subscribe()">
+      <input class="input-group" type="text" ng-model="newUser.name">
+      <input class="input-group" type="email" ng-model="newUser.email">
+    <button class="btn btn-primary" type="submit">Subscribe</button>
+  </form>
+
+  <ul>
+    <li ng-repeat="user in users">
+      <p>{{user.name}}</p>
+      <p>{{user.email}}</p>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-4"></div>
